@@ -1,0 +1,78 @@
+body {
+    background-color: #FAFAF9;
+    font-family: Sora;
+}
+
+.card :is(p, h1, h2, h3, h4, h5, h6, ul, li, figure) {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 336px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    margin-top: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.card .image-wrapper {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 336px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .tags {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 16px 0;
+}
+
+.card .tag {
+    border-radius: 999px;
+    padding: 4px 16px;
+    font-size: calc(10 / 16 * 1rem);
+    font-weight: 600;
+    color: #883AE1;
+    background-color: #E6D6FC;
+    white-space: nowrap;
+}
+
+.card .author {
+    color: #6C727F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card .title {
+    color: #20293A;
+    font-size: 18px;
+    font-weight: 600;
+    text-wrap: balance;
+    margin-bottom: 6px;
+}
+
+.card .description {
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(221, 8%, 46%);
+    text-wrap: balance;
+}
+
+.card footer {
+    margin-top: 20px;
+}
