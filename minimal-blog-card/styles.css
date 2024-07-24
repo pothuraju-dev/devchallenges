@@ -3,13 +3,13 @@ body {
     font-family: Sora;
 }
 
-.card :is(p, h1, h2, h3, h4, h5, h6, ul, li, figure) {
+.container :is(p, h1, h2, h3, h4, h5, h6, ul, li, figure) {
     margin: 0;
     padding: 0;
 }
 
 .card {
-    width: 336px;
+    width: 368px;
     height: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -19,7 +19,7 @@ body {
     box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
 }
 
-.card .image-wrapper {
+.container .image-wrapper {
     margin: 0;
 }
 
@@ -31,14 +31,14 @@ img {
     border-radius: 10px;
 }
 
-.card .tags {
+.container .tags {
     list-style: none;
     display: flex;
     padding: 0px;
     margin: 16px 0;
 }
 
-.card .tag {
+.container .tag {
     border-radius: 999px;
     padding: 4px 16px;
     font-size: calc(10 / 16 * 1rem);
@@ -48,7 +48,9 @@ img {
     white-space: nowrap;
 }
 
-.card .container {
+.container {
+    width: 100%;
+    max-width: 336px;
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
@@ -62,25 +64,22 @@ img {
     font-weight: 400;
 }
 
-.card .title {
+.container .title {
     color: #20293A;
     font-size: 18px;
     font-weight: 600;
-    text-wrap: balance;
     margin-bottom: 6px;
 }
 
-.card .description {
+.container .description {
     font-size: 14px;
     font-weight: 300;
     color: hsl(221, 8%, 46%);
-    text-wrap: balance;
 }
 
 .card footer {
     margin-top: 20px;
     width: 100%;
     padding-left: 16px;
-    padding-right: 16px;
     padding-bottom: 20px;
 }
