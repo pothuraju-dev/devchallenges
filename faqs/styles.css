@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+header,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-green {
+    background-color: #4CA154;
+}
+
+.bg-yellow {
+    background-color: #F5C044;
+}
+
+body {
+    background-color: #A5A5A5;
+    padding: 25px 50px;
+}
+
+header {
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+details {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: block;
+    width: 100%
+}
+
+details summary {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+}
+
+details > .content {
+    padding: 0 10px 30px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease-out;
+}
+
+details[open] > .content {
+    max-height: 600px; /* Adjust as needed */
+}
+
+details > .content > ul {
+    padding: 0 30px;
+}
