@@ -13,10 +13,6 @@ body {
     height: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 20px;
     margin-top: 164px;
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +48,14 @@ img {
     white-space: nowrap;
 }
 
+.card .container {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E5EAF0;
+}
+
 .card .author {
     color: #6C727F;
     font-size: 12px;
@@ -75,4 +79,8 @@ img {
 
 .card footer {
     margin-top: 20px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
 }
